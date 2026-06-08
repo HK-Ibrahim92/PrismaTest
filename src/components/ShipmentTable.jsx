@@ -77,13 +77,15 @@ function ShipmentTable({
 
               return (
                 <tr key={shipment.shipping_id || index}>
-                  <td className="strong-cell">{formatText(shipment.shipping_id)}</td>
-                  <td>{formatText(shipment.company_name)}</td>
-                  <td>{formatText(shipment.product_category)}</td>
-                  <td>{shipment.weight ? `${shipment.weight} kg` : '-'}</td>
-                  <td>{formatText(shipment.route)}</td>
-                  <td>{formatDate(date)}</td>
-                  <td>
+                  <td className="strong-cell" data-label="Shipping ID">
+                    {formatText(shipment.shipping_id)}
+                  </td>
+                  <td data-label="Company">{formatText(shipment.company_name)}</td>
+                  <td data-label="Product Category">{formatText(shipment.product_category)}</td>
+                  <td data-label="Weight">{shipment.weight ? `${shipment.weight} kg` : '-'}</td>
+                  <td data-label="Route">{formatText(shipment.route)}</td>
+                  <td data-label="Date">{formatDate(date)}</td>
+                  <td data-label="Status">
                     <StatusBadge status={shipment.status} />
                   </td>
                 </tr>

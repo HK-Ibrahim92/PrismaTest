@@ -11,9 +11,8 @@ function Sidebar() {
   return (
     <aside className="sidebar">
       <div className="logo">
-        <img style={{width:"100px"}} src="https://primaconsulting.org/wp-content/uploads/2024/04/prima-management-logo.svg" alt="ShipHub"/>
+        <img src="https://primaconsulting.org/wp-content/uploads/2024/04/prima-management-logo.svg" alt="ShipHub"/>
         <div>
-         
           <h3>Logistics</h3>
         </div>
       </div>
