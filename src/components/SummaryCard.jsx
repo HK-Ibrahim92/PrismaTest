@@ -4,7 +4,7 @@ function SummaryCard({ label, value, tone }) {
       <div className={`summary-icon ${tone}`} />
       <div>
         <p>{label}</p>
-        <strong>{value}</strong>
+        <strong>{value ? value : '-'}</strong>
       </div>
     </div>
   );
